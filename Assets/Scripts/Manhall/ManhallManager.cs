@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class ManhallManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private bool isOpened;
+    private bool canDive;
     void Start()
     {
+        isOpened = false;
+        canDive = false;
+    }
+
+    public void OnTriggerExit2D(Collider2D collider){
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void SetIsOpened(){
+        isOpened = true;
+    }
+
+    private void SetIsClosed(){
+        isOpened = false;
+        canDive = false;
     }
 }

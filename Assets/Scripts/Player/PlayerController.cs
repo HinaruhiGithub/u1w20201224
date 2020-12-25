@@ -4,15 +4,38 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
+    [SerializeField] private float swimSpeed = 2.0f;
+
     // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void Dive(){
+
     }
+
+    private void Swim(){
+
+    }
+
+    private void ReturnToField(){
+
+    }
+
+    private void InputKey(){
+
+    }
+
+    public void OnTriggerStay2D(Collider2D collider){
+
+    }
+
+    public void OnTriggerEnter2D(Collider2D collider)
+    {
+
+    }
+
 }
