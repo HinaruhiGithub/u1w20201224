@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8993258505694775980}
   m_Layer: 0
   m_Name: Manhall
-  m_TagString: Untagged
+  m_TagString: Manhall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,6 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86900a4e0dfd9434cb18d3738b466be5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerPrefab: {fileID: 6139140583317967350, guid: fb1b1e36687cdbe45b1772b2b1cfcc87,
+    type: 3}
 --- !u!50 &9098848835271662741
 Rigidbody2D:
   serializedVersion: 4

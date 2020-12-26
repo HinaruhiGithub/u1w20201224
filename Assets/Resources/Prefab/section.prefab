@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1485494207528678697}
   m_Layer: 0
   m_Name: section
-  m_TagString: Untagged
+  m_TagString: Section
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,6 +96,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fcbeff4ef386674d8ffa8238858b30b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  number: -1
+  neighborNum: ffffffffffffffffffffffffffffffff
+  PlayerPrefab: {fileID: 6139140583317967350, guid: fb1b1e36687cdbe45b1772b2b1cfcc87,
+    type: 3}
 --- !u!61 &7820805303158906236
 BoxCollider2D:
   m_ObjectHideFlags: 0

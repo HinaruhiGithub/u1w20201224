@@ -1,26 +1,46 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UniRx;
 
 public class ManhallController : MonoBehaviour
 {
-    private ReactiveProperty<int> openedNum;
+    private bool isOpened;
+    private bool canDive;
+    [SerializeField] private Object PlayerPrefab;
 
 
-    // Start is called before the first frame update
+
     void Start()
     {
-        openedNum = new ReactiveProperty<int>(0);
+        isOpened = false;
+        canDive = false;
     }
 
-    //
-    public void IncOpenedNum(){
-        openedNum.Value++;
+    public void OnTriggerExit2D(Collider2D collider)
+    {
+        if(collider.tag == "Player"){
+            if(isOpened && !canDive){
+                canDive = true;
+            }
+        }
     }
 
-    public void DecOpenedNum(){
-        openedNum.Value--;
+    public void SetIsOpened()
+    {
+        isOpened = true;
     }
 
+    public void SetIsClosed()
+    {
+        isOpened = false;
+        canDive = false;
+    }
+
+    public bool GetCanDive(){
+        return canDive;
+    }
+
+    public bool GetIsOpened(){
+        return isOpened;
+    }
 }
